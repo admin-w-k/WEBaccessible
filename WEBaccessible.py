@@ -8,7 +8,7 @@ for line in open("url.txt"):            #读取文件内容
                 print(url)
                 response = requests.get(url,verify=False,timeout=3) #设置超时时间为3s，非强制使用https
                 #print(response.status_code)
-                state = [200,503,304]        #匹配相应状态码
+                state = [200,503,304]        #匹配响应状态码
                 content1 = ('nginx')          #匹配字段中是否含有敏感信息
                 content2 = ('apache')
                 content3 = ('openresty')
