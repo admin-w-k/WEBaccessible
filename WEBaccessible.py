@@ -1,6 +1,6 @@
 import warnings
 import requests
-import pandas
+
 for line in open("url.txt"):            #读取文件内容
         try:                            #抓取异常内容
                 warnings.filterwarnings("ignore") #用于屏蔽未来警告信息（忽略匹配的警告）
